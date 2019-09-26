@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: li5i0/W4QKpsqtY3jlyosZyrjHcN0C1zz/DUcbGDSNL+csRdszvgx+U0IIOSlFh7m6g26EBIGfKXGiQcFknue7ymH5M52vnZS+soJ1qHMebK6zkI9QeX60Zm8vHilvYaYXvFkH8t8a5Iik+Lmk9r2wGs7+fUAmJa+8tmVTrcrSQLIxHbj239EYjn1sB41BrnCj67P5XRg7YLvuJ/XsiJzXtCPicsCvxg2K825ZgMyD25VbW6tIbHNsSkufTiG65TGSz+m9CzJ6pLD9ZBHufzT9gHzAGumNQINxveH1B4VCaqPmHH+SkUgYdFrf7P3bR/VNuIpn5DR76ebha5W0ZF7OPt4uDG/WZzldB+YkxqK+wuFIw6sgkbrX5fC0BR19EYPEy9mZnIHg7n9SGdP+EP2sogI6RsaXvlfL1QfCuoReBdHDubHXebGCG1dWaOMhjvMZoZ8pBoUEajOkssWEpvtP30NUnbrYTKvT35CNl7g8gSnWBGQUDW3CljAS7N7mDAS1R8TLa6QDEohrpu20BgICdFjGz5Oay/BsBihCAqhXaBuyCE5dfWhl7Wu8sT0PoIPi+rAJfGst8sYfb8jzXHRMiDWPL/SGlKOJnBDg8RPTtqj12nL6vhl/8dQIWsrA3SpWieObD7BtKkb1oq82mfI/KqqMg4R4rXrmzU72OVm6U=
+  app: trello-board-cbandara
+  on:
+    repo: cbandara/react-trello-testing
